@@ -6,7 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Mentor | Interactive Card Design</title>
 </head>
+<style rel="stylesheet">
+    body{
+        background-image: url(/images/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        display: flex;
+    }
+    #front-card{
+        position: absolute;
+        top: 100px;
+        left: 250px;
+    }
+    #back-card{
+        position: absolute;
+        top: 320px;
+        left: 350px;
+    }
+    form{
+        position: absolute;
+        top: 100px;
+        right: 100px;
+    }
+</style>
 <body>
-    
+    <img src="/images/bg-card-front.png" height="200" width="350" id="front-card"/>
+    <img src="/images/bg-card-back.png" height="200" width="350" id="back-card"/>
+    <div class="form">
+        <form>
+            <label>CARDHOLDER NAME</label><br/>
+                <input type="text" placeholder="e.g Jane Appleseed"/><br/>
+            <label>CARD NUMBER</label><br/>
+                <input type="number" placeholder="e.g 1234 5678 9123 0000"/><br/>
+            <label>EXP. DATE (MM/YY)</label><br/>
+                <input type="number" placeholder="MM"/>
+                <input type="number" placeholder="YY"/>
+            <label>CVC</label><br/>
+                <input type="number" placeholder="e.g. 123"/>
+        </form>
+    </div>
 </body>
 </html>
