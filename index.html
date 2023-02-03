@@ -7,10 +7,16 @@
     <title>Frontend Mentor | Interactive Card Design</title>
 </head>
 <style rel="stylesheet">
+    /*Font used in the website*/
+    @font-face {
+        font-family: SpaceGrotesk;
+        src: url(SpaceGrotesk-VariableFont_wght.ttf);
+    }
     body{
         background-image: url(/images/bg-main-desktop.png);
         background-repeat: no-repeat;
         display: flex;
+        font-family: SpaceGrotesk;
     }
     #front-card{
         position: absolute;
@@ -24,8 +30,33 @@
     }
     form{
         position: absolute;
-        top: 100px;
-        right: 100px;
+        top: 200px;
+        right: 300px;
+    }
+    .field{
+        padding: 10px 0;
+    }
+    label{
+        font-weight: 500;
+        font-size: 15px;
+        padding-top: 50px;
+        color: hsl(278, 68%, 11%);
+    }
+    .last{
+        position: relative;
+        top: -74px;
+        left: 200px;
+    }
+    input{
+        height: 3.5vh;
+        width: 20vw;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid ;
+    }
+    input::placeholder{
+        font-family: SpaceGrotesk;
+        font-size: 18px;
     }
 </style>
 <body>
@@ -33,15 +64,23 @@
     <img src="/images/bg-card-back.png" height="200" width="350" id="back-card"/>
     <div class="form">
         <form>
-            <label>CARDHOLDER NAME</label><br/>
+            <div class="field">
+                <label>CARDHOLDER NAME</label><br/>
                 <input type="text" placeholder="e.g Jane Appleseed"/><br/>
-            <label>CARD NUMBER</label><br/>
+            </div>
+            <div class="field">
+                <label>CARD NUMBER</label><br/>
                 <input type="number" placeholder="e.g 1234 5678 9123 0000"/><br/>
-            <label>EXP. DATE (MM/YY)</label><br/>
-                <input type="number" placeholder="MM"/>
-                <input type="number" placeholder="YY"/>
-            <label>CVC</label><br/>
+            </div>
+            <div class="field">
+                <label>EXP. DATE (MM/YY)</label><br/>
+                    <input type="number" placeholder="MM" style="width: 5vw"/>
+                    <input type="number" placeholder="YY" style="width: 5vw"/>
+            </div>
+            <div class="last field">
+                <label id="last">CVC</label><br/>
                 <input type="number" placeholder="e.g. 123"/>
+            </div>
         </form>
     </div>
 </body>
