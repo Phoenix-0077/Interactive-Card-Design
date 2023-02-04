@@ -60,15 +60,6 @@
         font-size: 18px;
         color: hsl(270, 3%, 87%);
     }
-    #enter{
-        font-family: SpaceGrotesk;
-        font-size: 18px;
-        position: relative;
-        top: -50px;
-        height: 7vh;
-        background-color: hsl(278, 68%, 11%);
-        color: hsl(0, 0%, 100%);
-    }
     .solid-circle{
         border: 1px solid hsl(0, 0%, 100%);
         height: 40px;
@@ -88,6 +79,19 @@
         background-color: transparent;
         height: 20px;
         width: 20px;
+    }
+    button{
+        font-family: SpaceGrotesk;
+        font-size: 18px;
+        position: absolute;
+        top: 450px;
+        right: 205px;
+        height: 7vh;
+        width: 23vw;
+        background-color: hsl(278, 68%, 11%);
+        color: hsl(0, 0%, 100%);
+        border: none;
+        border-radius: 5px;
     }
 </style>
 <body>
@@ -112,8 +116,8 @@
                 <label id="last">CVC</label><br/>
                 <input type="text" placeholder="e.g. 123" style="width: 10vw"/>
             </div>
-            <a href="complete-state-desktop.html"><input type="submit"  id="enter"></a>
         </form>
+        <a href="complete-state-desktop.html"><button>Confirm</button></a>
     </div>
     <div class="solid-circle"></div>
     <div class="transparent-circle"></div>
