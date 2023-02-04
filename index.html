@@ -30,11 +30,11 @@
     }
     form{
         position: absolute;
-        top: 200px;
+        top: 170px;
         right: 200px;
     }
     .field{
-        padding: 10px 0;
+        padding: 15px 0;
     }
     label{
         font-weight: 500;
@@ -44,7 +44,7 @@
     }
     .last{
         position: relative;
-        top: -79px;
+        top: -89px;
         left: 180px;
     }
     input{
@@ -59,6 +59,9 @@
         font-family: SpaceGrotesk;
         font-size: 18px;
         color: hsl(270, 3%, 87%);
+    }
+    input:active{
+        border: 1px solid;
     }
     .solid-circle{
         border: 1px solid hsl(0, 0%, 100%);
@@ -81,10 +84,11 @@
         width: 20px;
     }
     button{
+        display: none;
         font-family: SpaceGrotesk;
         font-size: 18px;
         position: absolute;
-        top: 450px;
+        top: 465px;
         right: 205px;
         height: 7vh;
         width: 23vw;
@@ -92,6 +96,10 @@
         color: hsl(0, 0%, 100%);
         border: none;
         border-radius: 5px;
+    }
+    .field p:last-child{
+        font-size: .7rem;
+        color: hsl(0, 100%, 66%);
     }
 </style>
 <body>
@@ -106,15 +114,18 @@
             <div class="field">
                 <label>CARD NUMBER</label><br/>
                 <input type="text" placeholder="e.g 1234 5678 9123 0000"/><br/>
+                <p>Wrong format, Numbers only</p>
             </div>
             <div class="field">
                 <label>EXP. DATE (MM/YY)</label><br/>
                     <input type="text" placeholder="MM" style="width: 5vw"/>
                     <input type="text" placeholder="YY" style="width: 5vw"/>
+                    <p>Can't be blank</p>
             </div>
             <div class="last field">
                 <label id="last">CVC</label><br/>
                 <input type="text" placeholder="e.g. 123" style="width: 10vw"/>
+                <p>Can't be blank</p>
             </div>
         </form>
         <a href="complete-state-desktop.html"><button>Confirm</button></a>
