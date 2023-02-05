@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Mentor | Interactive Card Design</title>
-    <script href="script.js"></script>
+    <script src="script.js"></script>
 </head>
 <style rel="stylesheet">
     /*Font used in the website*/
@@ -113,14 +113,14 @@
     }
     #cardholder-name{
         position: relative;
-        top: 245px;
-        left: -47px;
+        top: 170px;
+        left: 260px;
 
     }
     #cvc{
         position:relative;
-        top: 385px;
-        left: 220px;
+        top: 270px;
+        left: 620px;
     }
 </style>
 <body>
@@ -130,31 +130,33 @@
         <form>
             <div class="field">
                 <label>CARDHOLDER NAME</label><br/>
-                <input type="text" placeholder="e.g Jane Appleseed"/><br/>
+                <input type="text" placeholder="e.g Jane Appleseed" id="cardname"/><br/>
             </div>
             <div class="field">
                 <label>CARD NUMBER</label><br/>
-                <input type="text" placeholder="e.g 1234 5678 9123 0000"/><br/>
-                <p>Wrong format, Numbers only</p>
+                <input type="text" placeholder="e.g 1234 5678 9123 0000" id="cardnumber"/><br/>
+                <p class="error">Wrong format, Numbers only</p>
             </div>
             <div class="field">
                 <label>EXP. DATE (MM/YY)</label><br/>
-                    <input type="text" placeholder="MM" style="width: 5vw"/>
-                    <input type="text" placeholder="YY" style="width: 5vw"/>
-                    <p>Can't be blank</p>
+                    <input type="text" placeholder="MM" style="width: 5vw" class="date"/>
+                    <input type="text" placeholder="YY" style="width: 5vw" class="date"/>
+                    <p class="error">Can't be blank</p>
             </div>
             <div class="last field">
                 <label id="last">CVC</label><br/>
-                <input type="text" placeholder="e.g. 123" style="width: 10vw"/>
-                <p>Can't be blank</p>
+                <input type="text" placeholder="e.g. 123" style="width: 10vw" id="cvcnumber"/>
+                <p class="error">Can't be blank</p>
             </div>
         </form>
-        <a href="complete-state-desktop.html"><button>Confirm</button></a>
+        <a href="complete-state-desktop.html" id="tag"><button>Confirm</button></a>
     </div>
     <div class="solid-circle"></div>
     <div class="transparent-circle"></div>
-    <p id="card-number">0000 0000 0000 0000</p>
-    <p id="cardholder-name">Felicia Leire</p>
-    <p id="cvc">000</p>
+    <div class="details">
+        <p id="card-number"></p>
+        <p id="cardholder-name"></p>
+        <p id="cvc"></p>
+    </div>
 </body>
 </html>
