@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Mentor | Interactive Card Design</title>
+    <script href="script.js"></script>
 </head>
 <style rel="stylesheet">
     /*Font used in the website*/
@@ -34,7 +35,7 @@
         right: 200px;
     }
     .field{
-        padding: 15px 0;
+        padding: 10px 0;
     }
     label{
         font-weight: 500;
@@ -44,7 +45,7 @@
     }
     .last{
         position: relative;
-        top: -89px;
+        top: -80px;
         left: 180px;
     }
     input{
@@ -84,7 +85,6 @@
         width: 20px;
     }
     button{
-        display: none;
         font-family: SpaceGrotesk;
         font-size: 18px;
         position: absolute;
@@ -98,8 +98,11 @@
         border-radius: 5px;
     }
     .field p:last-child{
+        display: none;
         font-size: .7rem;
         color: hsl(0, 100%, 66%);
+        position: relative;
+        top: -10px;
     }
 </style>
 <body>
