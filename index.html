@@ -44,8 +44,8 @@
     }
     .last{
         position: relative;
-        top: -80px;
-        left: 180px;
+        top: 320px;
+        left: 1010px;
     }
     input{
         height: 3.5vh;
@@ -106,20 +106,19 @@
     #card-number{
         position: relative;
         top: 180px;
-        left: 260px;
+        left: 110px;
         text-justify: center;
         font-size: 28px;
     }
     #cardholder-name{
         position: relative;
         top: 170px;
-        left: 260px;
-
+        left: 110px;
     }
     #cvc{
         position:relative;
         top: 270px;
-        left: 620px;
+        left: 470px;
     }
 </style>
 <body>
@@ -129,25 +128,25 @@
         <form>
             <div class="field">
                 <label>CARDHOLDER NAME</label><br/>
-                <input type="text" placeholder="e.g Jane Appleseed" id="cardname"/><br/>
+                <input type="text" placeholder="e.g Jane Appleseed" id="cardname" required/><br/>
             </div>
             <div class="field">
                 <label>CARD NUMBER</label><br/>
-                <input type="text" placeholder="e.g 1234 5678 9123 0000" id="cardnumber"/><br/>
+                <input type="text" placeholder="e.g 1234 5678 9123 0000" id="cardnumber" required/><br/>
                 <p class="error">Wrong format, Numbers only</p>
             </div>
             <div class="field">
                 <label>EXP. DATE (MM/YY)</label><br/>
-                    <input type="text" placeholder="MM" style="width: 5vw" class="date"/>
-                    <input type="text" placeholder="YY" style="width: 5vw" class="date"/>
+                    <input type="text" placeholder="MM" style="width: 5vw" class="date" required/>
+                    <input type="text" placeholder="YY" style="width: 5vw" class="date" required/>
                     <p class="error">Can't be blank</p>
             </div>
-            <div class="last field">
-                <label id="last">CVC</label><br/>
-                <input type="text" placeholder="e.g. 123" style="width: 10vw" id="cvcnumber"/>
-                <p class="error">Can't be blank</p>
-            </div>
         </form>
+        <div class="last field">
+            <label id="last">CVC</label><br/>
+            <input type="text" placeholder="e.g. 123" style="width: 10vw" id="cvcnumber" required/>
+            <p class="error">Can't be blank</p>
+        </div>
         <a href="complete-state-desktop.html" id="tag"><button>Confirm</button></a>
     </div>
     <div class="solid-circle"></div>
