@@ -10,17 +10,7 @@ var nameCard = document.getElementById("card-name")
 var label = document.getElementsByTagName("label")
 
 //Function to validate the input details
-document.getElementsByTagName("button").addEventListener('click', function(){
-    if (input.length !== 0){
-        document.error.style.display = "none";
-    };
-});
+
 
 // Function to display details on the live card
-    input.addEventListener("click", function(){
-        nameCard.textContent = cardName.value
-    })
-
-    function changeColor(){
-        label.style.color = "blue";
-    }
+document
