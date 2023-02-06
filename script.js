@@ -13,4 +13,10 @@ var label = document.getElementsByTagName("label")
 
 
 // Function to display details on the live card
-document
+cardName.addEventListener('click', displayName)
+
+function displayName(){
+    nameCard.textContent
+}
+
+console.log(cardName.length());
