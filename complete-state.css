@@ -1,0 +1,57 @@
+/*Font used in the website*/
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(SpaceGrotesk-VariableFont_wght.ttf);
+}
+body{
+    background-image: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    font-weight: 500;
+}
+img:first-of-type{
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}
+img:last-of-type{
+    position: absolute;
+    top: 320px;
+    left: 350px;
+}
+.main{
+    position: absolute;
+    top: 250px;
+    right: 230px;
+    display: grid;
+    place-items: center;
+}
+.main img:first-child{
+    position: absolute;
+    top: -70px;
+    left: 95px;
+}
+p{
+    font-size: 18px;
+    font-family: SpaceGrotesk;
+}
+p:first-of-type{
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);;
+}
+p:last-of-type{
+    color: hsl(279, 6%, 55%)
+}
+a{
+    position: inherit;
+    top: 130px;
+}
+button{
+    height: 7vh;
+    width: 23vw;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+    font-family: SpaceGrotesk;
+    font-size: 18px;
+}

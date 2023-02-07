@@ -1,0 +1,113 @@
+/*Font used in the website*/
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(SpaceGrotesk-VariableFont_wght.ttf);
+}
+body{
+    background-image: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    display: flex;
+    font-family: SpaceGrotesk;
+}
+#front-card{
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}
+#back-card{
+    position: absolute;
+    top: 320px;
+    left: 350px;
+}
+form{
+    position: absolute;
+    top: 170px;
+    right: 200px;
+}
+.field{
+    padding: 10px 0;
+}
+label{
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 50px;
+    color: hsl(279, 6%, 55%);
+}
+.last{
+    position: relative;
+    top: 320px;
+    left: 1010px;
+}
+input{
+    height: 3.5vh;
+    width: 23vw;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    margin-top: 3px;
+}
+input::placeholder{
+    font-family: SpaceGrotesk;
+    font-size: 18px;
+    color: hsl(270, 3%, 87%);
+}
+input:active{
+    border: 1px solid;
+}
+.solid-circle{
+    border: 1px solid hsl(0, 0%, 100%);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 270px;
+    background-color: hsl(0, 0%, 100%);
+}
+.transparent-circle{
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 130px;
+    left: 330px;
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+}
+button{
+    font-family: SpaceGrotesk;
+    font-size: 18px;
+    position: absolute;
+    top: 465px;
+    right: 205px;
+    height: 7vh;
+    width: 23vw;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+}
+.field p:last-child{
+    display: none;
+    font-size: .7rem;
+    color: hsl(0, 100%, 66%);
+    position: relative;
+    top: -10px;
+}
+#card-number{
+    position: relative;
+    top: 180px;
+    left: 110px;
+    text-justify: center;
+    font-size: 28px;
+}
+#cardholder-name{
+    position: relative;
+    top: 170px;
+    left: 110px;
+}
+#cvc{
+    position:relative;
+    top: 270px;
+    left: 470px;
+}
