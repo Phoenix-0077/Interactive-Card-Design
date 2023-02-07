@@ -9,8 +9,8 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <img src="/images/bg-card-front.png" height="200" width="350" id="front-card"/>
-    <img src="/images/bg-card-back.png" height="200" width="350" id="back-card"/>
+    <img src="/images/bg-card-front.png" id="front-card"/>
+    <img src="/images/bg-card-back.png" id="back-card"/>
     <div class="form">
         <form>
             <div class="field">
@@ -24,14 +24,14 @@
             </div>
             <div class="field">
                 <label>EXP. DATE (MM/YY)</label><br/>
-                    <input type="text" placeholder="MM" style="width: 5vw" class="date" required/>
-                    <input type="text" placeholder="YY" style="width: 5vw" class="date" required/>
+                    <input type="text" placeholder="MM" class="date" required/>
+                    <input type="text" placeholder="YY" class="date" required/>
                     <p class="error">Can't be blank</p>
             </div>
         </form>
         <div class="last field">
             <label id="last">CVC</label><br/>
-            <input type="text" placeholder="e.g. 123" style="width: 10vw" id="cvcnumber" required/>
+            <input type="text" placeholder="e.g. 123" id="cvcnumber" required/>
             <p class="error">Can't be blank</p>
         </div>
         <a href="complete-state.html" id="tag"><button>Confirm</button></a>
@@ -39,9 +39,9 @@
     <div class="solid-circle"></div>
     <div class="transparent-circle"></div>
     <div class="details">
-        <p id="card-number"></p>
-        <p id="card-name"></p>
-        <p id="cvc"></p>
+        <p id="card-number">0000 0000 0000 0000</p>
+        <p id="card-name">Jane Appleseed</p>
+        <p id="cvc">000</p>
     </div>
 </body>
 </html>
