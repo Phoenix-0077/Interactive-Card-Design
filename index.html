@@ -12,7 +12,7 @@
     <img src="/images/bg-card-front.png" id="front-card"/>
     <img src="/images/bg-card-back.png" id="back-card"/>
     <div class="form">
-        <form>
+        <form id="myForm">
             <div class="field">
                 <label>CARDHOLDER NAME</label><br/>
                 <input type="text" placeholder="e.g Jane Appleseed" id="cardname"/><br/>
@@ -34,7 +34,7 @@
             <input type="text" placeholder="e.g. 123" id="cvcnumber"/>
             <p class="error">Can't be blank</p>
         </div>
-        <a href="complete-state.html" id="tag"><button id="submit">Confirm</button></a>
+        <a href="complete-state.html" id="tag"><button id="submit" onclick="return validateForm()">Confirm</button></a>
     </div>
     <div class="solid-circle"></div>
     <div class="transparent-circle"></div>

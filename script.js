@@ -11,12 +11,17 @@ var label = document.getElementsByTagName("label")
 
 //Function to validate the input details
 console.log('This is me')
-submit.addEventListener('click', function(){
-    if(cardName.value().length() == 0 || cardNumber.value().length() == 0 ||
-    cardDate.value().length() == 0 || cvcNumber.length() == 0){
-        error.style.display = 'flex'
+
+function validateForm(e){
+    let emptyName = document.forms["myForm"]["cardname"].value;
+    let emptyNumber = document.forms["myForm"]["cardnumber"].value;
+    if(emptyName || emptyNumber == ""){
+        alert("Name and number must be filled");
+        return false;
+    }else{
+        return true;
     }
-});
+}
 
 // Function to display details on the live card
 // submit.addEventListener('click', function(e){
