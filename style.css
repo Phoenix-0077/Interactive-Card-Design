@@ -92,6 +92,7 @@ button{
     border-radius: 5px;
 }
 .error{
+    display: none;
     font-size: .7rem;
     color: hsl(0, 100%, 66%);
     position: relative;
