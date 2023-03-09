@@ -15,16 +15,16 @@ console.log('This is me')
 
 
 function validateForm(){
-    var emptyName = document.forms["myForm"]["cardname"].value;
-    if(emptyName == ""){
-        alert("Name and number must be filled");
-        return false;
-    }
-    var emptyNumber = document.forms["myForm"]["cardnumber"].value;
-    if(emptyNumber == ""){
-        alert("Name and number must be filled");
-        return false;
-    }
+    // var emptyName = document.forms["myForm"]["cardname"].value;
+    // if(emptyName == ""){
+    //     alert("Name and number must be filled");
+    //     return false;
+    // }
+    // var emptyNumber = document.forms["myForm"]["cardnumber"].value;
+    // if(emptyNumber == ""){
+    //     alert("Name and number must be filled");
+    //     return false;
+    // }
     if(typeof emptyNumber == ""){
         alert("Number entered is invalid");
         return false;

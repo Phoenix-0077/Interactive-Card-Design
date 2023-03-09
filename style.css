@@ -92,11 +92,19 @@ button{
     border-radius: 5px;
 }
 .error{
-    display: none;
     font-size: .7rem;
     color: hsl(0, 100%, 66%);
     position: relative;
     top: -10px;
+}
+#error-message-card-number{
+    display: none;
+}
+#error-message-date{
+    display: none;
+}
+#error-message-cvv{
+    display: none;
 }
 #myspan{
     position: relative;
