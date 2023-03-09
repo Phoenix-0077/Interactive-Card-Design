@@ -25,12 +25,30 @@ function validateForm(){
     //     alert("Name and number must be filled");
     //     return false;
     // }
-    if(typeof emptyNumber == ""){
+    // var emptyNumber = document.forms["myForm"]["cardnumber"].value;
+    // if(isNaN(emptyNumber) == true){
+    //     alert("Number entered is invalid");
+    //     return false;
+    // }
+    var dateMonth = document.forms["myForm"]["month"].value;
+    if(isNaN(dateMonth) == true){
         alert("Number entered is invalid");
         return false;
-    }else{
-        return true; 
     }
+    if(dateMonth <= 1 && dateMonth >= 12){
+        alert("Number entered is invalid");
+        return false;
+    }
+    // var dateYear = document.forms["myForm"]["year"].value;
+    // if(isNaN(dateYear) == true ){
+    //     alert("Number entered is invalid");
+    //     return false;
+    // }
+    // var cvcNumber = document.forms["myForm"]["cvcnumber"].value;
+    // if(isNaN(cvcNumber) == true && cvcNumber.length != 3){
+    //     alert("Number entered is invalid");
+    //     return false;
+    // }
 }
 
 
