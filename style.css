@@ -98,13 +98,13 @@ button{
     top: -10px;
 }
 #error-message-card-number{
-    display: none;
+    visibility: hidden;
 }
 #error-message-date{
-    display: none;
+    visibility: hidden;
 }
-#error-message-cvv{
-    display: none;
+#error-message-cvc{
+    visibility: hidden;
 }
 #myspan{
     position: relative;
