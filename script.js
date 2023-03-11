@@ -3,59 +3,65 @@ console.log('This is me')
 
 
 function validateForm(){
-    emptyName = document.forms["myForm"]["cardname"].value;
-    if(emptyName == "") {
-        //To validate input number
-        var emptyNumber = document.forms["myForm"]["cardnumber"].value;
-        var cardNumberError = document.getElementById('error-message-card-number');
-        if(emptyNumber == ""){
-            cardNumberError.style.visibility = 'visible';
-        }
-        if(isNaN(emptyNumber) == true){
-            cardNumberError.style.visibility = 'visible';
-        }
-        if(emptyNumber.length != 16){
-            cardNumberError.style.visibility = 'visible';
-        }
-        // To validate input date(month)
-        var dateMonth = document.forms["myForm"]["month"].value;
-        var monthError = document.getElementById('error-message-date');
-        if(dateMonth == ""){
-            monthError.style.visibility = 'visible';
-        }
-        if(isNaN(dateMonth) == true){
-            monthError.style.visibility = 'visible';
-        }
-        if(dateMonth > 12){
-            monthError.style.visibility = 'visible';
-        }
-        //To validate input date(year)
-        var dateYear = document.forms["myForm"]["year"].value;
-        var yearError = document.getElementById('error-message-date');
-        if(dateYear == ""){
-            yearError.style.visibilty = 'visible';
-        }
-        if(isNaN(dateYear) == true){
-            yearError.style.visibility = 'visible';
-        }
-        if(dateYear.length != 2){
-            yearError.style.visibility = 'visible';
-        }
-        //To validate cvc number
-        var cvcNumber = document.forms["myForm"]["cvcnumber"].value;
-        var cvcError = document.getElementById('error-message-cvc');
-        if(cvcNumber == ""){
-            cvcError.style.visibility = "visible";
-        }
-        if(isNaN(cvcNumber) == true){
-            cvcError.style.visibility = "visible";
-        }
-        if(cvcNumber.length != 3){
-            cvcError.style.visibility = "visible";
-        }
+    //To validate input number
+    var emptyNumber = document.forms["myForm"]["cardnumber"].value;
+    var cardNumberError = document.getElementById('error-message-card-number');
+    if(emptyNumber == ""){
+        cardNumberError.style.visibility = 'visible';
         return false;
-    }else{
-        return true;
+    }
+    if(isNaN(emptyNumber) == true){
+        cardNumberError.style.visibility = 'visible';
+        return false;
+    }
+    if(emptyNumber.length != 16){
+        cardNumberError.style.visibility = 'visible';
+        return false;
+    }
+    // To validate input date(month)
+    var dateMonth = document.forms["myForm"]["month"].value;
+    var monthError = document.getElementById('error-message-date');
+    if(dateMonth == ""){
+        monthError.style.visibility = 'visible';
+        return false;
+    }
+    if(isNaN(dateMonth) == true){
+        monthError.style.visibility = 'visible';
+        return false;
+    }
+    if(dateMonth > 12){
+        monthError.style.visibility = 'visible';
+        return false;
+    }
+    //To validate input date(year)
+    var dateYear = document.forms["myForm"]["year"].value;
+    var yearError = document.getElementById('error-message-date');
+    if(dateYear == ""){
+        yearError.style.visibilty = 'visible';
+        return false;
+    }
+    if(isNaN(dateYear) == true){
+        yearError.style.visibility = 'visible';
+        return false;
+    }
+    if(dateYear.length != 2){
+        yearError.style.visibility = 'visible';
+        return false;
+    }
+    //To validate cvc number
+    var cvcNumber = document.forms["myForm"]["cvcnumber"].value;
+    var cvcError = document.getElementById('error-message-cvc');
+    if(cvcNumber == ""){
+        cvcError.style.visibility = "visible";
+        return false;
+    }
+    if(isNaN(cvcNumber) == true){
+        cvcError.style.visibility = "visible";
+        return false;
+    }
+    if(cvcNumber.length != 3){
+        cvcError.style.visibility = "visible";
+        return false;
     }
 }
 
