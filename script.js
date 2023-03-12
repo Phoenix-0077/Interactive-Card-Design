@@ -65,10 +65,13 @@ function validateForm(){
     }
 }
 
-
+let cName = document.getElementById('card-name');
+let cNumber = document.getElementById('card-number');
+let cCvc = document.getElementById('cvc');
 // Function to display details on the live card
-// submit.addEventListener('click', function(e){
-//     alert('This is me');
-//     e.preventDefault();
-// });
+submitButton = document.getElementById('submit');
 
+emptyNumber.addEventListener(focus, function(){
+    cNumber.textContent = "";
+    cNumber.textContent = emptyNumber;
+})
